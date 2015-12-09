@@ -120,7 +120,7 @@ void EjecutarFB() {
   if (ColorFB != "") {
     int AnimacionBuscar = -1;
     for (int i = 0; i < CantidadAnimaciones; i++) {
-      if (ColorFB == NombreAnimaciones[i]) {
+      if (ColorFB.equalsIgnoreCase(NombreAnimaciones[i])) {
         AnimacionBuscar = i;
       }
     }
