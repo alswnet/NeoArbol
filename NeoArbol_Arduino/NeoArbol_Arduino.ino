@@ -127,6 +127,9 @@ void EjecutarFB() {
     if (AnimacionBuscar > 0) {
       Serial.print("Animacion: ");
       Serial.println(AnimacionBuscar);
+      LCD.clear();
+      LCD.setCursor(0, 0);
+      LCD.print("NeoArbol ALSW");
       NombreGlobal = NombreFB;
       ColorGlobal = ColorFB;
       LCD.setCursor(0, 1);
